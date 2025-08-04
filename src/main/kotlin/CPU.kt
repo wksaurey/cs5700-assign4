@@ -1,5 +1,5 @@
 object CPU {
-    private val R = mutableListOf<Int>(7)
+    private val R = MutableList(7) {0}
     var P = 0
         private set
     var T = 0

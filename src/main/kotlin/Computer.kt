@@ -22,7 +22,6 @@ object Computer {
         val first = MemoryBus.read(CPU.P)
         val second = MemoryBus.read(CPU.P+1)
         val instruction = (first shl 8) or second
-        incrementP()
         return instruction.toString(16).padStart(4, '0')
     }
 

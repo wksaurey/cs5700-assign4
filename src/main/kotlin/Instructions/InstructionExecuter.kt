@@ -22,9 +22,6 @@ object InstructionExecuter {
             0xf -> instruction = Draw()
         }
         instruction.perform(command.slice(1..3))
-    }
-
-    fun setInstruction(command: String) {
-
+        instruction.incrementP()
     }
 }
