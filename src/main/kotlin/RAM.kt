@@ -6,7 +6,7 @@ object RAM : Memory {
     val memory = IntArray(4096)
 
     override fun read(address: Int): Int {
-        if (address >= memory.size) {
+        if (address > memory.size) {
             exitProcess(0)
         }
         return memory[address]
